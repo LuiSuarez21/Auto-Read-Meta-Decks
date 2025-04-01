@@ -18,4 +18,4 @@ fileName = "decks_name.txt"
 
 funcAux.fetch_decks(decks, regex_expression, regex_pattern_clean_name, array_decks)
 funcAux.add_new_decks_file_txt(fileName, array_decks)
-
+funcAux.menu(array_decks)
