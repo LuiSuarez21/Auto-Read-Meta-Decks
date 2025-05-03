@@ -19,19 +19,30 @@ def fetch_decks(decks_html, regex_expression, regex_pattern_clean_name, array_de
             array_decks.append(clean_deck_name)
 
 
-def fetch_option(options_html, regex_expression):
+def fetch_option(options_html, regex_expression, array_options):
+    new_array_options = []
     for option in options_html:
         option_string = str(option)
         result_search = re.search(regex_expression, option_string)
-        re.findall(r'[0-9]{2}', str(result_search))
+        array_options.append(re.findall(r'[0-9]{2}', str(result_search)))
+
+    for item in array_options:
+        for it in item:
+            if (int(it) == 7 or int(it) == 14 or int(it) == 30 or int(it) == 90) and it not in new_array_options:
+                new_array_options.append(it)
+
+    array_options.clear()
+    array_options.extend(new_array_options)
 
 
-def menu(array_decks):
+def menu(array_decks, array_options):
     print("-----------------------------------------\n\n")
+    print("Error!!! Please insert a correct value!!!")
     print("1) All decks of the current meta on Modern;")
-    print("2) Prices of each deck;")
-    print("3) Top 3 positions on the last competitions of this Modern Decks;")
-    print("4) Give me a deck list of a certain deck;")
+    print("2) All decks of the current meta on Modern on the last 7 Days;")
+    print("3) Prices of each deck;")
+    print("4) Top 3 positions on the last competitions of this Modern Decks;")
+    print("5) Give me a deck list of a certain deck;")
     option = int(input("\nChoose an option: "))
 
     while option in range(1, 5) == False:

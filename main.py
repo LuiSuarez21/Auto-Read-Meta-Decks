@@ -13,14 +13,16 @@ option_html = soup.find_all(class_="metagame-re-sort")
 regex_expression = r'/archetype/modern-(.*?)#online'  # Extract deck name
 regex_expression_option_selected = r'<option selected="selected".+'
 regex_pattern_clean_name = r'-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$'  # Remove full UUID (random letters we don't want)
+
 # I need now to parse my option on 7 days
 # And I need, probably, to clean the excessive lines of code that will comi with this fecth
 
 # Variable Declarations
 array_decks = []
+array_options = []
 fileName = "decks_name.txt"
 
 funcAux.fetch_decks(decks_html, regex_expression, regex_pattern_clean_name, array_decks)
-funcAux.fetch_option(option_html, regex_expression_option_selected)
+funcAux.fetch_option(option_html, regex_expression_option_selected, array_options)
 funcAux.add_new_decks_file_txt(fileName, array_decks)
-funcAux.menu(array_decks)
+funcAux.menu(array_decks, array_options)
