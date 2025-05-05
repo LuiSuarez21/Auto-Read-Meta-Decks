@@ -5,6 +5,6 @@ Repo for the project made for for a personal project. The goal is to fetch the i
 # Made with the purpose to train:
   - Python;
   - Regular expressions;
-  - UnitTests;
+  - PyTests;
   - HTML Parsing using Python;
   - GitHub Actions;
