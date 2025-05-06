@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: auto_read
+Version: 0.0.0
+Summary: auto read meta decks mtg
+Author: Jose Esteves
+License: MIT
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: requests~=2.32.3
+Requires-Dist: bs4~=0.0.2
+Requires-Dist: beautifulsoup4~=4.13.3
+Requires-Dist: pytest~=8.3.5
+Provides-Extra: testing
+Requires-Dist: pytest>=6.0; extra == "testing"
+Requires-Dist: pytest-cov>=2.0; extra == "testing"
+Requires-Dist: mypy>=0.910; extra == "testing"
+Requires-Dist: flake8>=3.9; extra == "testing"
+Requires-Dist: tox>=3.24; extra == "testing"

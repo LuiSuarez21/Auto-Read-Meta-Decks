@@ -1,0 +1,13 @@
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/auto_read/__init__.py
+src/auto_read/funcAux.py
+src/auto_read.egg-info/PKG-INFO
+src/auto_read.egg-info/SOURCES.txt
+src/auto_read.egg-info/dependency_links.txt
+src/auto_read.egg-info/not-zip-safe
+src/auto_read.egg-info/requires.txt
+src/auto_read.egg-info/top_level.txt
+tests/test_auto_read.py
