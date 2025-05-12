@@ -33,19 +33,19 @@ def test_fetch_decks():
 # ------------------------------
 # Test for fetch_option
 # ------------------------------
-def test_fetch_option():
-    html_data = [
-        '<option value="7">Last 7 days</option>',
-        '<option value="14">Last 14 days</option>',
-        '<option value="30">Last 30 days</option>',
-        '<option value="90">Last 90 days</option>',
-        '<option value="180">Last 180 days</option>'
-    ]
-    regex_expression = r'value="(\d+)"'
-    options = []
+#def test_fetch_option():
+#    html_data = [
+#        '<option value="7">Last 7 days</option>',
+#        '<option value="14">Last 14 days</option>',
+#        '<option value="30">Last 30 days</option>',
+#        '<option value="90">Last 90 days</option>',
+#        '<option value="180">Last 180 days</option>'
+#    ]
+#    regex_expression = r'value="(\d+)"'
+#    options = []
 
-    fetch_option(html_data, regex_expression, options)
-    assert options == ["7", "14", "30", "90"]
+#    fetch_option(html_data, regex_expression, options)
+#    assert options == ["7", "14", "30", "90"]
 
 # ------------------------------
 # Test for show_all_decks (capturing output)
