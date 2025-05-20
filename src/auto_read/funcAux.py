@@ -60,15 +60,19 @@ def menu(array_decks, array_options):
             show_all_decks(array_decks)
 
         case 2:
+            print("Function not completed...")
             breakpoint()
 
         case 3:
+            print("Function not completed...")
             breakpoint()
 
         case 4:
+            print("Function not completed...")
             breakpoint()
 
         case 5:
+            print("Function not completed...")
             breakpoint()
 
 

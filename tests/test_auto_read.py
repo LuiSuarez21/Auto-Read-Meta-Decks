@@ -47,6 +47,7 @@ def test_fetch_decks():
 #    fetch_option(html_data, regex_expression, options)
 #    assert options == ["7", "14", "30", "90"]
 
+
 # ------------------------------
 # Test for show_all_decks (capturing output)
 # ------------------------------
